@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Download, Store } from "lucide-react";
-import { MacOSIcon, WindowsIcon, AndroidIcon, IOSIcon } from "@/components/icons/platform-icons";
+import { Download } from "lucide-react";
+import { AppleIcon, WindowsIcon, AndroidIcon, AppStoreIcon, PlayStoreIcon } from "@/components/icons/platform-icons";
 
 const APP_VERSION:string = "0.7.1";
 
@@ -19,7 +19,7 @@ export function DownloadsPage() {
         <Card className="flex flex-col">
           <CardHeader className="flex-1">
             <CardTitle className="flex items-center gap-2 text-2xl">
-              <MacOSIcon className="h-6 w-6" />
+              <AppleIcon className="h-6 w-6" />
               macOS
             </CardTitle>
             <CardDescription className="text-base mt-2">
@@ -37,7 +37,7 @@ export function DownloadsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Store className="h-5 w-5" />
+                <AppStoreIcon className="h-5 w-5" />
                 Download from App Store
               </a>
             </Button>
@@ -49,6 +49,44 @@ export function DownloadsPage() {
               >
                 <Download className="h-5 w-5" />
                 Direct Download (.dmg)
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="flex flex-col">
+          <CardHeader className="flex-1">
+            <CardTitle className="flex items-center gap-2 text-2xl">
+              <AndroidIcon className="h-6 w-6" />
+              Android
+            </CardTitle>
+            <CardDescription className="text-base mt-2">
+              Android 8.0 and above
+            </CardDescription>
+            <div className="mt-4 text-sm text-muted-foreground">
+              <p>Material You design with dynamic theming</p>
+              <p className="mt-2">Background sync and notifications</p>
+            </div>
+          </CardHeader>
+          <CardContent className="mt-auto space-y-3">
+            <Button className="w-full gap-2 py-6 text-lg" variant="outline" asChild>
+              <a
+                href="https://play.google.com/store/apps/details?id=dev.birju.targetmate"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <PlayStoreIcon className="h-5 w-5" />
+                Get it on Google Play
+              </a>
+            </Button>
+            <Button className="w-full gap-2 py-6 text-lg" asChild>
+              <a
+                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="h-5 w-5" />
+                Direct Download (.apk)
               </a>
             </Button>
           </CardContent>
@@ -85,45 +123,7 @@ export function DownloadsPage() {
         <Card className="flex flex-col">
           <CardHeader className="flex-1">
             <CardTitle className="flex items-center gap-2 text-2xl">
-              <AndroidIcon className="h-6 w-6" />
-              Android
-            </CardTitle>
-            <CardDescription className="text-base mt-2">
-              Android 8.0 and above
-            </CardDescription>
-            <div className="mt-4 text-sm text-muted-foreground">
-              <p>Material You design with dynamic theming</p>
-              <p className="mt-2">Background sync and notifications</p>
-            </div>
-          </CardHeader>
-          <CardContent className="mt-auto space-y-3">
-            <Button className="w-full gap-2 py-6 text-lg" variant="outline" asChild>
-              <a
-                href="https://play.google.com/store/apps/details?id=dev.birju.targetmate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Store className="h-5 w-5" />
-                Get it on Google Play
-              </a>
-            </Button>
-            <Button className="w-full gap-2 py-6 text-lg" asChild>
-              <a
-                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Download className="h-5 w-5" />
-                Direct Download (.apk)
-              </a>
-            </Button>
-          </CardContent>
-        </Card>
-
-        <Card className="flex flex-col">
-          <CardHeader className="flex-1">
-            <CardTitle className="flex items-center gap-2 text-2xl">
-              <IOSIcon className="h-6 w-6" />
+              <AppleIcon className="h-6 w-6" />
               iOS
             </CardTitle>
             <CardDescription className="text-base mt-2">
@@ -141,7 +141,7 @@ export function DownloadsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Download className="h-5 w-5" />
+                <AppStoreIcon className="h-5 w-5" />
                 Download on App Store
               </a>
             </Button>
