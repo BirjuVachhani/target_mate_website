@@ -9,6 +9,7 @@ import { ChangelogPage } from '@/pages/changelog';
 import { DownloadsPage } from '@/pages/downloads';
 import { MotivationPage } from '@/pages/motivation';
 import { DonatePage } from '@/pages/donate';
+import { NotFoundPage } from '@/pages/not-found';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -44,6 +45,7 @@ export default function App() {
             <Route path="/downloads" element={<DownloadsPage />} />
             <Route path="/motivation" element={<MotivationPage />} />
             <Route path="/donate" element={<DonatePage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer />
         </div>

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { APP_NAME } from "@/lib/constants";
-import { AppIcon } from "@/components/icons/app-icon";
+import { TextLogo } from "@/components/ui/text-logo";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,12 +9,11 @@ export function Footer() {
       <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <div className="flex items-center gap-2">
-            <AppIcon className="h-6 w-6" />
-            <span className="font-semibold">{APP_NAME}</span>
+            <TextLogo color="white"/>
+            <p className="text-sm text-muted-foreground">
+              © {currentYear} All rights reserved
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground">
-            © {currentYear} All rights reserved
-          </p>
         </div>
         <div className="flex flex-col items-center gap-4 md:flex-row">
           <div className="flex gap-4">
@@ -35,7 +33,7 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             Built by{" "}
             <a
-              href="mailto:brvachhani@gmail.com"
+              href="https://birju.dev"
               className="text-primary hover:underline"
             >
               Birju Vachhani

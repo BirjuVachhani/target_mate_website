@@ -33,9 +33,15 @@ export function Hero() {
                   {PLATFORM_LABELS[platform]}
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="gap-2">
-                <Github className="h-5 w-5" />
-                View on GitHub
+              <Button size="lg" variant="outline" className="gap-2" asChild>
+                <a 
+                  href="https://github.com/BirjuVachhani/target_mate"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="h-5 w-5" />
+                  View on GitHub
+                </a>
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">

@@ -27,10 +27,10 @@ export function Features() {
               >
                 <div className="lg:w-1/2 space-y-4">
                   <div className="inline-block rounded-lg bg-gray-100 p-3 dark:bg-gray-800">
-                    {IconComponent && <IconComponent className="h-6 w-6 text-primary" />}
+                    <IconComponent className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold">{feature.title}</h3>
-                  <p className="text-gray-500 dark:text-gray-400 max-w-[500px]">
+                  <p className="text-muted-foreground max-w-[500px]">
                     {feature.description}
                   </p>
                 </div>

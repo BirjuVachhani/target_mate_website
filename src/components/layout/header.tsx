@@ -1,11 +1,11 @@
 import { ModeToggle } from "@/components/theme/mode-toggle";
-import { APP_NAME } from "@/lib/constants";
 import { Menu, Heart } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AppIcon } from "@/components/icons/app-icon";
 import { useState } from "react";
+import { TextLogo } from "@/components/ui/text-logo";
 
 export function Header() {
   const location = useLocation();
@@ -25,7 +25,8 @@ export function Header() {
         <div className="flex items-center">
           <Link to="/" className="mr-6 flex items-center space-x-2">
             <AppIcon className="h-6 w-6" />
-            <span className="font-bold">{APP_NAME}</span>
+            {/* <span className="font-bold">{APP_NAME}</span> */}
+            <TextLogo color="white" />
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <Link 
@@ -37,20 +38,20 @@ export function Header() {
               Home
             </Link>
             <Link 
-              to="/motivation" 
-              className={`transition-colors hover:text-foreground/80 ${
-                isActive("/motivation") ? "text-foreground" : "text-foreground/60"
-              }`}
-            >
-              Our Story
-            </Link>
-            <Link 
               to="/#features" 
               className={`transition-colors hover:text-foreground/80 ${
                 isActive("/#features") ? "text-foreground" : "text-foreground/60"
               }`}
             >
               Features
+            </Link>
+            <Link 
+              to="/motivation" 
+              className={`transition-colors hover:text-foreground/80 ${
+                isActive("/motivation") ? "text-foreground" : "text-foreground/60"
+              }`}
+            >
+              Our Story
             </Link>
             <Link 
               to="/downloads" 
@@ -103,15 +104,6 @@ export function Header() {
                     Home
                   </Link>
                   <Link 
-                    to="/motivation" 
-                    className={`px-4 py-2 rounded-md transition-colors hover:bg-accent ${
-                      isActive("/motivation") ? "bg-accent" : ""
-                    }`}
-                    onClick={handleNavigation}
-                  >
-                    Our Story
-                  </Link>
-                  <Link 
                     to="/#features" 
                     className={`px-4 py-2 rounded-md transition-colors hover:bg-accent ${
                       isActive("/#features") ? "bg-accent" : ""
@@ -119,6 +111,15 @@ export function Header() {
                     onClick={handleNavigation}
                   >
                     Features
+                  </Link>
+                  <Link 
+                    to="/motivation" 
+                    className={`px-4 py-2 rounded-md transition-colors hover:bg-accent ${
+                      isActive("/motivation") ? "bg-accent" : ""
+                    }`}
+                    onClick={handleNavigation}
+                  >
+                    Our Story
                   </Link>
                   <Link 
                     to="/downloads" 

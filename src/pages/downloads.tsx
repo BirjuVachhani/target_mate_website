@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download, Store } from "lucide-react";
 import { MacOSIcon, WindowsIcon, AndroidIcon, IOSIcon } from "@/components/icons/platform-icons";
+import { Link } from "react-router-dom";
+
+const APP_VERSION:string = "0.7.1";
 
 export function DownloadsPage() {
   return (
@@ -29,13 +32,25 @@ export function DownloadsPage() {
             </div>
           </CardHeader>
           <CardContent className="mt-auto space-y-3">
-            <Button className="w-full gap-2 py-6 text-lg" variant="outline">
-              <Store className="h-5 w-5" />
-              Download from App Store
+            <Button className="w-full gap-2 py-6 text-lg" variant="outline" asChild>
+              <a
+                href="https://apps.apple.com/in/app/target-mate/id6447091819"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Store className="h-5 w-5" />
+                Download from App Store
+              </a>
             </Button>
-            <Button className="w-full gap-2 py-6 text-lg">
-              <Download className="h-5 w-5" />
-              Direct Download (.dmg)
+            <Button className="w-full gap-2 py-6 text-lg" asChild>
+              <a
+                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-macos-${APP_VERSION}.dmg`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="h-5 w-5" />
+                Direct Download (.dmg)
+              </a>
             </Button>
           </CardContent>
         </Card>
@@ -55,9 +70,15 @@ export function DownloadsPage() {
             </div>
           </CardHeader>
           <CardContent className="mt-auto">
-            <Button className="w-full gap-2 py-6 text-lg">
-              <Download className="h-5 w-5" />
-              Download for Windows
+            <Button className="w-full gap-2 py-6 text-lg" asChild>
+              <a
+                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-windows-${APP_VERSION}.exe`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="h-5 w-5" />
+                Download for Windows
+              </a>
             </Button>
           </CardContent>
         </Card>
@@ -77,13 +98,25 @@ export function DownloadsPage() {
             </div>
           </CardHeader>
           <CardContent className="mt-auto space-y-3">
-            <Button className="w-full gap-2 py-6 text-lg" variant="outline">
-              <Store className="h-5 w-5" />
-              Get it on Google Play
+            <Button className="w-full gap-2 py-6 text-lg" variant="outline" asChild>
+              <a
+                href="https://play.google.com/store/apps/details?id=dev.birju.targetmate"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Store className="h-5 w-5" />
+                Get it on Google Play
+              </a>
             </Button>
-            <Button className="w-full gap-2 py-6 text-lg">
-              <Download className="h-5 w-5" />
-              Direct Download (.apk)
+            <Button className="w-full gap-2 py-6 text-lg" asChild>
+              <a
+                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="h-5 w-5" />
+                Direct Download (.apk)
+              </a>
             </Button>
           </CardContent>
         </Card>
@@ -103,9 +136,15 @@ export function DownloadsPage() {
             </div>
           </CardHeader>
           <CardContent className="mt-auto">
-            <Button className="w-full gap-2 py-6 text-lg">
-              <Download className="h-5 w-5" />
-              Download on App Store
+            <Button className="w-full gap-2 py-6 text-lg" asChild>
+              <a
+                href="https://apps.apple.com/in/app/target-mate/id6447091819"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="h-5 w-5" />
+                Download on App Store
+              </a>
             </Button>
           </CardContent>
         </Card>
