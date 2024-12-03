@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download, Store } from "lucide-react";
 import { MacOSIcon, WindowsIcon, AndroidIcon, IOSIcon } from "@/components/icons/platform-icons";
-import { Link } from "react-router-dom";
 
 const APP_VERSION:string = "0.7.1";
 

@@ -6,10 +6,12 @@ import { Button } from "@/components/ui/button";
 import { AppIcon } from "@/components/icons/app-icon";
 import { useState } from "react";
 import { TextLogo } from "@/components/ui/text-logo";
+import { useTheme } from "@/components/theme/theme-provider";
 
 export function Header() {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const { theme } = useTheme();
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -25,8 +27,7 @@ export function Header() {
         <div className="flex items-center">
           <Link to="/" className="mr-6 flex items-center space-x-2">
             <AppIcon className="h-6 w-6" />
-            {/* <span className="font-bold">{APP_NAME}</span> */}
-            <TextLogo color="white" />
+            <TextLogo color={theme === 'dark' ? "white" : theme === 'light' ? "black" : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "white" : "black")} />
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <Link 
