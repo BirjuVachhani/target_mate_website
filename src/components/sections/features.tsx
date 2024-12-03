@@ -1,6 +1,7 @@
 import { FEATURES } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import * as Icons from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
 export function Features() {
   return (
@@ -16,7 +17,7 @@ export function Features() {
         </div>
         <div className="space-y-24">
           {FEATURES.map((feature, index) => {
-            const Icon = Icons[feature.icon as keyof typeof Icons];
+            const IconComponent = Icons[feature.icon as keyof typeof Icons] as LucideIcon;
             return (
               <div
                 key={feature.title}
@@ -26,7 +27,7 @@ export function Features() {
               >
                 <div className="lg:w-1/2 space-y-4">
                   <div className="inline-block rounded-lg bg-gray-100 p-3 dark:bg-gray-800">
-                    <Icon className="h-6 w-6 text-primary" />
+                    {IconComponent && <IconComponent className="h-6 w-6 text-primary" />}
                   </div>
                   <h3 className="text-2xl font-bold">{feature.title}</h3>
                   <p className="text-gray-500 dark:text-gray-400 max-w-[500px]">

@@ -69,3 +69,6 @@ Thumbs.db
 # storybook-static
 # cypress/videos/
 # cypress/screenshots/
+
+# Local Netlify folder
+.netlify
