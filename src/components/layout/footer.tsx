@@ -29,6 +29,14 @@ export function Footer() {
             >
               Terms
             </Link>
+            <Link
+              to="https://github.com/BirjuVachhani/target_mate"
+              className="text-sm font-medium underline-offset-4 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </Link>
           </div>
           <p className="text-sm text-muted-foreground">
             Built by{" "}
@@ -36,7 +44,7 @@ export function Footer() {
               href="https://birju.dev"
               className="text-primary hover:underline"
             >
-              Birju Vachhani
+              <strong>Birju Vachhani</strong>
             </a>
           </p>
         </div>

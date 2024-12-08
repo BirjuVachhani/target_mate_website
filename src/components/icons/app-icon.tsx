@@ -8,7 +8,7 @@ export function AppIcon(props: SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <circle cx="50" cy="50" r="50" fill="currentColor" className="text-primary/10" />
+      <circle cx="50" cy="50" r="50" fill="currentColor" className="text-primary/10" opacity="0.2" />
       <g transform="translate(25, 25)">
         <rect x="0" y="20" width="10" height="30" fill="currentColor" />
         <rect x="20" y="0" width="10" height="50" fill="currentColor" />

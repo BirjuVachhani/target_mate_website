@@ -1,13 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { TextLogo } from "@/components/ui/text-logo";
 
 export function MotivationPage() {
   return (
     <div className="container py-24">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">The Story Behind Target Mate</h1>
-        
+        <h1 className="text-4xl font-bold mb-2">The Story Behind <TextLogo className="inline pb-1" width="180" height="40" /></h1>
+        <h2 className="text-lg font-regular mb-8 text-muted-foreground">
+          From the creator: <a href="https://birju.dev" className="text-primary no-underline">Birju Vachhani</a>
+        </h2>
         <div className="prose dark:prose-invert">
-          <p className="lead text-xl text-muted-foreground mb-8">
+          <p className="lead text-lg mb-8">
             As a dedicated Toggl Track user, I found myself needing a solution to better manage my working hours and maintain a healthy work-life balance.
           </p>
 

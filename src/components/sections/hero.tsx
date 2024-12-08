@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { APP_NAME, APP_DESCRIPTION } from "@/lib/constants";
+import { APP_NAME } from "@/lib/constants";
 import { Download, Github } from "lucide-react";
 import { getPlatform, PLATFORM_LABELS, type Platform } from "@/lib/platform";
 import { useEffect, useState } from "react";
@@ -31,8 +31,7 @@ export function Hero() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden pt-0">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-background z-0" />
+    <div className="relative overflow-hidden pt-0 mesh-gradient">
       <div className="container relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 py-8 md:py-12">
           <div className="flex flex-col items-start lg:items-start gap-6 text-left lg:w-1/2 px-4 lg:px-8">
@@ -46,7 +45,7 @@ export function Hero() {
                 {APP_NAME}
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                {APP_DESCRIPTION}
+                A companion app for <a href="https://toggl.com" target="_blank" rel="noopener noreferrer" className="text-primary font-bold">Toggl Track</a> to manage your working hours and achieve your monthly goals.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start w-full sm:w-auto gap-4">
@@ -68,7 +67,7 @@ export function Hero() {
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              Available for Windows, macOS, iOS, and Android
+              Available for Windows, macOS, iOS, and Android. <a href="/downloads" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">See available platforms</a>.
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end">

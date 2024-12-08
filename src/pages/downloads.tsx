@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download } from "lucide-react";
 import { AppleIcon, WindowsIcon, AndroidIcon, AppStoreIcon, PlayStoreIcon } from "@/components/icons/platform-icons";
+import { TextLogo } from "@/components/ui/text-logo";
 
 const APP_VERSION:string = "0.7.1";
 
@@ -9,9 +10,9 @@ export function DownloadsPage() {
   return (
     <div className="container py-24">
       <div className="flex flex-col items-center text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Download Target Mate</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">Download <TextLogo className="inline pb-1" width="180" height="40" /></h1>
         <p className="text-muted-foreground max-w-[600px]">
-          Choose your platform and start tracking your time more efficiently today
+          Choose your platform and start managing your goals more efficiently today!
         </p>
       </div>
       
@@ -31,7 +32,7 @@ export function DownloadsPage() {
             </div>
           </CardHeader>
           <CardContent className="mt-auto space-y-3">
-            <Button className="w-full gap-2 py-6 text-lg" variant="outline" asChild>
+            <Button className="w-full gap-2 py-6 text-base" variant="outline" asChild>
               <a
                 href="https://apps.apple.com/in/app/target-mate/id6447091819"
                 target="_blank"
@@ -41,7 +42,7 @@ export function DownloadsPage() {
                 Download from App Store
               </a>
             </Button>
-            <Button className="w-full gap-2 py-6 text-lg" asChild>
+            <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
                 href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-macos-${APP_VERSION}.dmg`}
                 target="_blank"
@@ -61,15 +62,14 @@ export function DownloadsPage() {
               Android
             </CardTitle>
             <CardDescription className="text-base mt-2">
-              Android 8.0 and above
+              Compatible with Android 8.0 and later
             </CardDescription>
             <div className="mt-4 text-sm text-muted-foreground">
-              <p>Material You design with dynamic theming</p>
-              <p className="mt-2">Background sync and notifications</p>
+              <p>Enjoy seamless background synchronization and real-time notifications.</p>
             </div>
           </CardHeader>
           <CardContent className="mt-auto space-y-3">
-            <Button className="w-full gap-2 py-6 text-lg" variant="outline" asChild>
+            <Button className="w-full gap-2 py-6 text-base" variant="outline" asChild>
               <a
                 href="https://play.google.com/store/apps/details?id=dev.birju.targetmate"
                 target="_blank"
@@ -79,7 +79,7 @@ export function DownloadsPage() {
                 Get it on Google Play
               </a>
             </Button>
-            <Button className="w-full gap-2 py-6 text-lg" asChild>
+            <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
                 href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`}
                 target="_blank"
@@ -107,14 +107,14 @@ export function DownloadsPage() {
             </div>
           </CardHeader>
           <CardContent className="mt-auto">
-            <Button className="w-full gap-2 py-6 text-lg" asChild>
+            <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
                 href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-windows-${APP_VERSION}.exe`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Download className="h-5 w-5" />
-                Download for Windows
+                Direct Download (.exe)
               </a>
             </Button>
           </CardContent>
@@ -130,12 +130,11 @@ export function DownloadsPage() {
               iOS 14.0 and above
             </CardDescription>
             <div className="mt-4 text-sm text-muted-foreground">
-              <p>Native iOS design with widgets support</p>
-              <p className="mt-2">iCloud sync and backup</p>
+              <p>Compatible with all iPhones and iPads, offering a seamless experience across devices.</p>
             </div>
           </CardHeader>
           <CardContent className="mt-auto">
-            <Button className="w-full gap-2 py-6 text-lg" asChild>
+            <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
                 href="https://apps.apple.com/in/app/target-mate/id6447091819"
                 target="_blank"

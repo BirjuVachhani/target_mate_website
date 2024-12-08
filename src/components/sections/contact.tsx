@@ -33,7 +33,7 @@ export function Contact() {
                   <Mail className="h-5 w-5" />
                   <div className="text-left">
                     <div className="font-semibold">Email Us</div>
-                    <div className="text-sm text-muted">For general inquiries</div>
+                    <div className="text-sm">For general inquiries</div>
                   </div>
                 </Button>
                 
@@ -45,7 +45,7 @@ export function Contact() {
                   <MessageSquare className="h-5 w-5" />
                   <div className="text-left">
                     <div className="font-semibold">GitHub Issues</div>
-                    <div className="text-sm text-muted">For bug reports & features</div>
+                    <div className="text-sm text-muted-foreground">For bug reports & features</div>
                   </div>
                 </Button>
               </div>

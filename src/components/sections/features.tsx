@@ -35,11 +35,11 @@ export function Features() {
                   </p>
                 </div>
                 <div className="lg:w-1/2 flex justify-center lg:justify-end">
-                  <Card className="w-full max-w-[600px]">
+                  <Card className="w-full max-w-[600px] overflow-hidden">
                     <CardContent className="p-0">
                       <div className="aspect-video bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg flex items-center justify-center">
                         <img
-                          src={`https://placehold.co/1200x800/2a2a2a/white?text=Feature+${index + 1}`}
+                          src={feature.image}
                           alt={feature.title}
                           className="rounded-lg object-cover w-full h-full"
                         />

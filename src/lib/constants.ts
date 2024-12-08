@@ -1,30 +1,41 @@
 export const APP_NAME = "Target Mate";
-export const APP_DESCRIPTION = "A companion app for Toggl Track to manage your working hours and achieve your monthly goals";
 
 export const FEATURES = [
   {
-    title: "Smart Time Tracking",
-    description: "Seamlessly integrate with Toggl Track using credentials or API key. Track your time across multiple workspaces and projects with automatic sync at customizable intervals.",
-    icon: "Clock",
-    image: "/screenshots/tracking.png"
+    title: "Goals at a glance",
+    description: "Quickly view and manage your goals with an intuitive interface, ensuring you stay on track with your time management. Track daily process, finishing time and over time with ease.",
+    icon: "Goal",
+    image: "/screenshots/goals_tracking.jpeg"
   },
   {
-    title: "Flexible Work Schedule",
+    title: "Set Monthly Goals",
     description: "Customize your working days to account for leaves and holidays. Set monthly hour limits and track your progress with intelligent calculations for daily averages.",
     icon: "Calendar",
-    image: "/screenshots/schedule.png"
+    image: "/screenshots/flexible_schedule.jpeg"
   },
   {
-    title: "System Integration",
-    description: "Stay informed with system tray integration showing today's progress. Quick controls and notifications keep you updated on daily and monthly goal achievements.",
+    title: "Minimal Context Switching",
+    description: "Easily monitor your current progress with intuitive system tray integration, allowing for quick access to your time tracking without disrupting your workflow. Get notified when you achieve your daily & monthly targets.",
+    icon: "PersonStanding",
+    image: "/screenshots/system_integration.jpeg"
+  },
+  {
+    title: "Comprehensive Project Tracking",
+    description: "Effortlessly monitor specific projects or track all activities across your workspace. Enhance your productivity by keeping tabs on every aspect of your work.",
+    icon: "Filter",
+    image: "/screenshots/filters.jpeg"
+  },
+  {
+    title: "Personalize Your Experience",
+    description: "Select from a variety of stunning themes or opt for softer colors to reduce eye strain. Customize sync frequency with Toggl Track and easily switch between workspaces and projects.",
+    icon: "Palette",
+    image: "/screenshots/customization.jpeg"
+  },
+  {
+    title: "Get notified",
+    description: "Receive timely notifications to alert you when you achieve your daily and monthly targets, ensuring you never miss a milestone in your productivity journey.",
     icon: "Bell",
-    image: "/screenshots/notifications.png"
-  },
-  {
-    title: "Privacy First",
-    description: "No analytics, no data collection, no strings attached! All your data stays securely on your local machine, giving you complete control over your information.",
-    icon: "Shield",
-    image: "/screenshots/privacy.png"
+    image: "/screenshots/notifications.jpeg"
   }
 ];
 

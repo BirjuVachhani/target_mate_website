@@ -5,7 +5,7 @@ const SCREENSHOTS = [
   {
     title: "Dashboard Overview",
     description: "Track your daily and monthly progress at a glance",
-    image: "https://placehold.co/640x1280/1a1a1a/white?text=Dashboard+Overview"
+    image: "/screenshots/dashboard.jpeg"
   },
   {
     title: "Statistics & Reports",

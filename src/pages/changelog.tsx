@@ -1,16 +1,28 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Book } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 export function ChangelogPage() {
   return (
     <div className="container py-24">
-      <h1 className="text-4xl font-bold mb-12">Changelog</h1>
+      <div className="mb-4">
+        <Book size={64} />
+      </div>
+      <h1 className="text-4xl font-bold mb-2">Changelog</h1>
+      <h2 className="text-xl text-muted-foreground mb-8">Stay updated with the latest changes and improvements</h2>
+      <Button className="mb-8" variant="outline" asChild>
+        {/* ... existing button code ... */}
+      </Button>
       <div className="space-y-8">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Version 0.8.0</CardTitle>
+            <CardTitle className="text-2xl flex items-center">
+              Version 0.8.0 
+              <span className="inline-flex items-center justify-center ml-2 px-2 py-0.5 text-sm font-medium text-blue-500 border border-blue-500 rounded-full">latest</span>
+            </CardTitle>
             <p className="text-sm text-muted-foreground">August 7, 2024</p>
           </CardHeader>
-          <CardContent>
+          <CardContent> 
             <ul className="list-disc pl-6 space-y-2">
               <li>Add support for clients</li>
               <li>Better handling of errors when fetching data</li>
