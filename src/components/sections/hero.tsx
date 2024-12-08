@@ -67,7 +67,7 @@ export function Hero() {
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              Available for Windows, macOS, iOS, and Android. <a href="/downloads" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">See available platforms</a>.
+              Available for Windows, macOS, iOS, and Android. <Link to="/downloads" className="text-primary hover:underline">See available platforms</Link>.
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end">

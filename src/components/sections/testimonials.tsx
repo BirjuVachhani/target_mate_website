@@ -16,7 +16,7 @@ export function Testimonials() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-background -z-10" />
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl max-w-[800px]">
-            Loved by businesses worldwide
+            Loved by professionals worldwide
           </h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             See what our customers have to say about their experience
@@ -43,7 +43,7 @@ export function Testimonials() {
                       <div>
                         <p className="font-semibold">{testimonial.name}</p>
                         <p className="text-sm text-muted-foreground">
-                          {testimonial.role} at {testimonial.company}
+                          {testimonial.role} {testimonial.company && `at ${testimonial.company}`}
                         </p>
                       </div>
                     </div>
