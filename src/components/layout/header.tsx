@@ -26,8 +26,8 @@ export function Header() {
       <div className="container flex h-14 items-center justify-between">
         <div className="flex items-center">
           <Link to="/" className="mr-6 flex items-center space-x-2">
-            <AppIcon className="h-6 w-6" />
-            <TextLogo color={theme === 'dark' ? "white" : theme === 'light' ? "black" : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "white" : "black")} />
+            <AppIcon className="h-6 w-6 text-primary" />
+            <TextLogo className="h-16 text-primary" color="currentColor" />
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <Link 

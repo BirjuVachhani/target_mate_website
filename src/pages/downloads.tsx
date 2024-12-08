@@ -147,6 +147,21 @@ export function DownloadsPage() {
           </CardContent>
         </Card>
       </div>
+      <div className="flex flex-col items-center text-center mt-12">
+        <h2 className="text-2xl font-bold mb-4">Report Issues</h2>
+        <p className="text-muted-foreground max-w-[600px] mb-4">
+          If you encounter any issues while downloading or using the app, please let us know!
+        </p>
+        <Button variant="outline" asChild>
+          <a
+            href="https://github.com/BirjuVachhani/target_mate/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Report an Issue
+          </a>
+        </Button>
+      </div>
     </div>
   );
 }

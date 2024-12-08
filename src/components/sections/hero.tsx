@@ -31,7 +31,7 @@ export function Hero() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden pt-0 mesh-gradient">
+    <div className="relative overflow-hidden pt-0 bg-gradient-to-br from-muted/20 via-transparent to-transparent z-0">
       <div className="container relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 py-8 md:py-12">
           <div className="flex flex-col items-start lg:items-start gap-6 text-left lg:w-1/2 px-4 lg:px-8">

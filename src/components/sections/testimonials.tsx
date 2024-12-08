@@ -37,7 +37,7 @@ export function Testimonials() {
                   <Card className="h-full p-6">
                     <div className="flex items-center gap-4 mb-4">
                       <Avatar className="h-12 w-12">
-                        <AvatarImage src={testimonial.avatar} />
+                        <AvatarImage src={testimonial.avatar} className="object-cover" />
                         <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
                       </Avatar>
                       <div>
