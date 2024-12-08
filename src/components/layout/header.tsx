@@ -6,12 +6,10 @@ import { Button } from "@/components/ui/button";
 import { AppIcon } from "@/components/icons/app-icon";
 import { useState } from "react";
 import { TextLogo } from "@/components/ui/text-logo";
-import { useTheme } from "@/components/theme/theme-provider";
 
 export function Header() {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
-  const { theme } = useTheme();
 
   const isActive = (path: string) => {
     return location.pathname === path;
