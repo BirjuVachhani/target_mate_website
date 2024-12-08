@@ -75,11 +75,11 @@ export function Hero() {
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[340px]">
               <div className="relative z-10">
-                <div className="transition-opacity duration-500">
+                <div className={`transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
                   <img
                     src={screenshots[currentScreenshot]}
                     alt="Target Mate app interface"
-                    className="w-full h-full object-cover opacity-100"
+                    className="w-full h-full object-cover rounded-[32px] transition-opacity duration-500"
                   />
                 </div>
                 <div className="absolute -z-10 inset-0 translate-y-2 scale-[0.98] bg-background/50 rounded-[40px] blur-lg" />
