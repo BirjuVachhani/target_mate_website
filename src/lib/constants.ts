@@ -36,6 +36,12 @@ export const FEATURES = [
     description: "Receive timely notifications to alert you when you achieve your daily and monthly targets, ensuring you never miss a milestone in your productivity journey.",
     icon: "Bell",
     image: "/screenshots/notifications_grained.jpeg"
+  },
+  {
+    title: "Privacy Focused",
+    description: "Your data remains entirely yours! We prioritize your privacy with no analytics or data collection—everything is securely stored locally on your device, ensuring complete peace of mind.",
+    icon: "Shield",
+    image: "/screenshots/notifications.jpeg"
   }
 ];
 
@@ -59,6 +65,6 @@ export const TESTIMONIALS = [
     role: "Software Engineer",
     // company: "Design Studio",
     content: "The daily limits feature has greatly improved my work-life balance, allowing me to manage my time effectively and avoid burnout.",
-    // avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
   }
 ];

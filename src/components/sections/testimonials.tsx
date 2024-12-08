@@ -43,7 +43,7 @@ export function Testimonials() {
                       <div>
                         <p className="font-semibold">{testimonial.name}</p>
                         <p className="text-sm text-muted-foreground">
-                          {testimonial.role} {testimonial.company && `at ${testimonial.company}`}
+                          {testimonial.role}
                         </p>
                       </div>
                     </div>
