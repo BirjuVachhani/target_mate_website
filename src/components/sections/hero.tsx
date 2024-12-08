@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 export function Hero() {
   const [platform, setPlatform] = useState<Platform>('unknown');
   const [currentScreenshot, setCurrentScreenshot] = useState(0);
-  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
   const [fade, setFade] = useState(true);
 
   const screenshots = [
