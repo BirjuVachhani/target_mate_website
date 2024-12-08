@@ -7,22 +7,46 @@ import { Link } from "react-router-dom";
 
 export function Hero() {
   const [platform, setPlatform] = useState<Platform>('unknown');
+  const [currentScreenshot, setCurrentScreenshot] = useState(0);
+  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
+  const [fade, setFade] = useState(true);
+
+  const screenshots = [
+    "/screenshots/screenshot_1.png",
+    "/screenshots/screenshot_2.png",
+    "/screenshots/screenshot_3.png",
+  ];
 
   useEffect(() => {
     setPlatform(getPlatform());
+    
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrentScreenshot((prev) => (prev + 1) % screenshots.length);
+        setFade(true);
+      }, 500);
+    }, 3000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative overflow-hidden pt-20">
+    <div className="relative overflow-hidden pt-0">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-background z-0" />
       <div className="container relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 py-8 md:py-12">
-          <div className="flex flex-col items-center lg:items-start gap-6 text-center lg:text-left lg:w-1/2 px-4 lg:px-8">
+          <div className="flex flex-col items-start lg:items-start gap-6 text-left lg:w-1/2 px-4 lg:px-8">
             <div className="space-y-4">
+              <img
+                src="/app_icon.png"
+                alt="App Icon"
+                className="w-32 h-32"
+              />
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
                 {APP_NAME}
               </h1>
-              <p className="mx-auto lg:mx-0 max-w-[600px] text-muted-foreground md:text-xl">
+              <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 {APP_DESCRIPTION}
               </p>
             </div>
@@ -49,16 +73,14 @@ export function Hero() {
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[400px]">
-              <div className="relative z-10 transform hover:scale-105 transition-transform duration-300">
-                <div className="phone-frame">
-                  <div className="phone-screen">
-                    <img
-                      src="https://placehold.co/640x1280/1a1a1a/white?text=App+Screenshot"
-                      alt="Target Mate app interface"
-                      className="w-full h-full object-cover rounded-[32px]"
-                    />
-                  </div>
+            <div className="relative w-full max-w-[340px]">
+              <div className="relative z-10">
+                <div className="transition-opacity duration-500">
+                  <img
+                    src={screenshots[currentScreenshot]}
+                    alt="Target Mate app interface"
+                    className="w-full h-full object-cover opacity-100"
+                  />
                 </div>
                 <div className="absolute -z-10 inset-0 translate-y-2 scale-[0.98] bg-background/50 rounded-[40px] blur-lg" />
                 <div className="absolute -z-20 inset-0 translate-y-4 scale-[0.96] bg-primary/10 rounded-[40px] blur-xl" />

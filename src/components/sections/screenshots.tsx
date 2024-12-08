@@ -5,22 +5,22 @@ const SCREENSHOTS = [
   {
     title: "Dashboard Overview",
     description: "Track your daily and monthly progress at a glance",
-    image: "/screenshots/main.png"
+    image: "https://placehold.co/640x1280/1a1a1a/white?text=Dashboard+Overview"
   },
   {
     title: "Statistics & Reports",
     description: "Detailed insights into your working patterns",
-    image: "/screenshots/stats.png"
+    image: "https://placehold.co/640x1280/1a1a1a/white?text=Statistics+and+Reports"
   },
   {
     title: "Time Tracking",
     description: "Seamless integration with Toggl Track",
-    image: "/screenshots/tracking.png"
+    image: "https://placehold.co/640x1280/1a1a1a/white?text=Time+Tracking"
   },
   {
     title: "Schedule Management",
     description: "Flexible working days and holiday settings",
-    image: "/screenshots/schedule.png"
+    image: "https://placehold.co/640x1280/1a1a1a/white?text=Schedule+Management"
   }
 ];
 
