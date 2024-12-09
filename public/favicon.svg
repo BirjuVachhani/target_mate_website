@@ -1,12 +1,1 @@
-<svg
-  viewBox="0 0 100 100"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <circle cx="50" cy="50" r="50" fill="#9ECAFF" class="text-primary/10" opacity="1" />
-  <g transform="translate(25, 25)">
-    <rect x="0" y="20" width="10" height="30" fill="currentColor" />
-    <rect x="20" y="0" width="10" height="50" fill="currentColor" />
-    <rect x="40" y="30" width="10" height="20" fill="currentColor" />
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#9ECAFF" class="text-primary/10" opacity="1"/><g transform="translate(25, 25)"><rect width="10" height="30" x="0" y="20" fill="currentColor"/><rect width="10" height="50" x="20" y="0" fill="currentColor"/><rect width="10" height="20" x="40" y="30" fill="currentColor"/></g></svg>
