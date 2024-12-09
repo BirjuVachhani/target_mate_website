@@ -41,7 +41,7 @@ export const FEATURES = [
     title: "Privacy Focused",
     description: "Your data remains entirely yours! We prioritize your privacy with no analytics or data collection—everything is securely stored locally on your device, ensuring complete peace of mind.",
     icon: "Shield",
-    image: "/screenshots/notifications.jpeg"
+    image: "/screenshots/privacy_grained.jpeg"
   }
 ];
 
