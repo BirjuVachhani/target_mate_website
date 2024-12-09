@@ -14,6 +14,15 @@ export function Hero() {
     "/screenshots/screenshot_1.png",
     "/screenshots/screenshot_2.png",
     "/screenshots/screenshot_3.png",
+    "/screenshots/screenshot_4.png",
+    "/screenshots/screenshot_5.png",
+    "/screenshots/screenshot_6.png",
+    "/screenshots/screenshot_7.png",
+    "/screenshots/screenshot_8.png",
+    "/screenshots/screenshot_9.png",
+    "/screenshots/screenshot_10.png",
+    "/screenshots/screenshot_11.png",
+    "/screenshots/screenshot_12.png",
   ];
 
   useEffect(() => {
@@ -72,19 +81,22 @@ export function Hero() {
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[340px]">
-              <div className="relative z-10">
-                <div className={`transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="relative z-2">
+                <div className={`transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}>
                   <img
                     src={screenshots[currentScreenshot]}
                     alt="Target Mate app interface"
-                    className="w-full h-full object-cover rounded-[32px] transition-opacity duration-500"
+                    className="w-full h-full object-cover rounded-[32px] transition-opacity duration-300 px-4 py-3"
                   />
                 </div>
-                <div className="absolute -z-10 inset-0 translate-y-2 scale-[0.98] bg-background/50 rounded-[40px] blur-lg" />
-                <div className="absolute -z-20 inset-0 translate-y-4 scale-[0.96] bg-primary/10 rounded-[40px] blur-xl" />
               </div>
-              <div className="absolute -z-30 inset-0 translate-y-6 scale-105 bg-gradient-to-br from-primary/20 via-primary/5 to-background blur-2xl rounded-full" />
+              <img
+                src="/screenshots/iphone_14_frame.png"
+                alt="Device Frame"
+                className="absolute inset-0 w-full h-full z-10"
+              />
             </div>
+            
           </div>
         </div>
       </div>
