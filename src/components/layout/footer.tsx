@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { TextLogo } from "@/components/ui/text-logo";
+import { GITHUB_REPO, WEBSITE } from "@/lib/constants";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ export function Footer() {
       <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <div className="flex items-center gap-2">
-            <TextLogo color="white"/>
+            <TextLogo/>
             <p className="text-sm text-muted-foreground">
               © {currentYear} All rights reserved
             </p>
@@ -30,7 +31,7 @@ export function Footer() {
               Terms
             </Link>
             <Link
-              to="https://github.com/BirjuVachhani/target_mate"
+              to={GITHUB_REPO}
               className="text-sm font-medium underline-offset-4 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,8 +42,10 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             Built by{" "}
             <a
-              href="https://birju.dev"
+              href={WEBSITE}
               className="text-primary hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <strong>Birju Vachhani</strong>
             </a>

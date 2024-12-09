@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { TextLogo } from "@/components/ui/text-logo";
+import { WEBSITE } from "@/lib/constants";
 
 export function MotivationPage() {
   return (
@@ -7,7 +8,7 @@ export function MotivationPage() {
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-2">The Story Behind <TextLogo className="inline pb-1" width="180" height="40" /></h1>
         <h2 className="text-lg font-regular mb-8 text-muted-foreground">
-          From the creator: <a href="https://birju.dev" className="text-primary no-underline">Birju Vachhani</a>
+          From the creator: <a href={WEBSITE} className="text-primary no-underline"><strong>Birju Vachhani</strong></a>
         </h2>
         <div className="prose dark:prose-invert">
           <p className="lead text-lg mb-8">

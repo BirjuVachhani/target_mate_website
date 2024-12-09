@@ -1,4 +1,32 @@
 export const APP_NAME = "Target Mate";
+export const TWITTER = "https://x.com/BirjuVachhani";
+export const LINKEDIN = "https://linkedin.com/in/vachhanibirju";
+export const GITHUB = "https://github.com/BirjuVachhani";
+export const GITHUB_REPO = "https://github.com/BirjuVachhani/target_mate";
+export const GITHUB_ISSUES = "https://github.com/BirjuVachhani/target_mate/issues";
+export const WEBSITE = "https://birju.dev";
+export const TOGGL = "https://toggl.com";
+export const BUY_ME_COFFEE = "https://buymeacoffee.com/birjuvachhani";
+export const GITHUB_SPONSERS = "https://github.com/sponsors/BirjuVachhani";
+
+export const APP_VERSION = "0.8.0";
+
+export class DownloadLinks {
+
+  // Android
+  static readonly ANDROID_STORE = "https://play.google.com/store/apps/details?id=dev.birju.targetmate";
+  static readonly ANDROID_DIRECT = `https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`;
+  
+  // macOS
+  static readonly MAC_STORE = "https://apps.apple.com/in/app/target-mate/id6447091819";
+  static readonly MAC_DIRECT = `https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-macos-${APP_VERSION}.dmg`;
+  
+  // iOS/iPadOS
+  static readonly IOS_STORE = "https://apps.apple.com/in/app/target-mate/id6447091819";
+  
+  // Windows
+  static readonly WINDOWS_DIRECT = `https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-windows-${APP_VERSION}.exe`;
+}
 
 export const FEATURES = [
   {

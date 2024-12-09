@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { APP_NAME } from "@/lib/constants";
+import { APP_NAME, GITHUB_REPO, TOGGL } from "@/lib/constants";
 import { Download, Github } from "lucide-react";
 import { getPlatform, PLATFORM_LABELS, type Platform } from "@/lib/platform";
 import { useEffect, useState } from "react";
@@ -45,7 +45,7 @@ export function Hero() {
                 {APP_NAME}
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                A companion app for <a href="https://toggl.com" target="_blank" rel="noopener noreferrer" className="text-primary font-bold">Toggl Track</a> to manage your working hours and achieve your monthly goals.
+                A companion app for <a href={TOGGL} target="_blank" rel="noopener noreferrer" className="text-primary font-bold">Toggl Track</a> to manage your working hours and achieve your monthly goals.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start w-full sm:w-auto gap-4">
@@ -57,7 +57,7 @@ export function Hero() {
               </Button>
               <Button size="lg" variant="outline" className="gap-2" asChild>
                 <a 
-                  href="https://github.com/BirjuVachhani/target_mate"
+                  href={GITHUB_REPO}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

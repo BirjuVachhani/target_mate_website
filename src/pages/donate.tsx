@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TextLogo } from "@/components/ui/text-logo";
-import { Coffee, Github, Heart } from "lucide-react";
+import { BUY_ME_COFFEE, GITHUB, GITHUB_SPONSERS, LINKEDIN, TWITTER, WEBSITE } from "@/lib/constants";
+import { Coffee, Github, Heart, Twitter, Linkedin, Globe, Mail } from "lucide-react";
 
 export function DonatePage() {
   return (
@@ -35,7 +36,7 @@ export function DonatePage() {
                   asChild
                 >
                   <a
-                    href="https://buymeacoffee.com/birjuvachhani"
+                    href={BUY_ME_COFFEE}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="gap-2"
@@ -66,7 +67,7 @@ export function DonatePage() {
                   asChild
                 >
                   <a
-                    href="https://github.com/sponsors/BirjuVachhani"
+                    href={GITHUB_SPONSERS}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="gap-2"
@@ -111,7 +112,7 @@ export function DonatePage() {
                   asChild
                 >
                   <a
-                    href="https://github.com/BirjuVachhani"
+                    href={GITHUB}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="gap-2"
@@ -128,7 +129,50 @@ export function DonatePage() {
                     href="mailto:brvachhani@gmail.com"
                     className="gap-2"
                   >
-                    Contact Me
+                    <Mail className="h-4 w-4" />
+                    Email
+                  </a>
+                </Button>
+                <Button
+                  variant="outline"
+                  asChild
+                >
+                  <a
+                    href={TWITTER}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="gap-2"
+                  >
+                    <Twitter className="h-4 w-4" />
+                    Twitter
+                  </a>
+                </Button>
+                <Button
+                  variant="outline"
+                  asChild
+                >
+                  <a
+                    href={LINKEDIN}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="gap-2"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                    LinkedIn
+                  </a>
+                </Button>
+                <Button
+                  variant="outline"
+                  asChild
+                >
+                  <a
+                    href={WEBSITE}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="gap-2"
+                  >
+                    <Globe className="h-4 w-4" />
+                    Website
                   </a>
                 </Button>
               </div>

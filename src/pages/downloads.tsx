@@ -3,8 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Download } from "lucide-react";
 import { AppleIcon, WindowsIcon, AndroidIcon, AppStoreIcon, PlayStoreIcon } from "@/components/icons/platform-icons";
 import { TextLogo } from "@/components/ui/text-logo";
-
-const APP_VERSION:string = "0.7.1";
+import { DownloadLinks, GITHUB_ISSUES } from "@/lib/constants";
 
 export function DownloadsPage() {
   return (
@@ -34,7 +33,7 @@ export function DownloadsPage() {
           <CardContent className="mt-auto space-y-3">
             <Button className="w-full gap-2 py-6 text-base" variant="outline" asChild>
               <a
-                href="https://apps.apple.com/in/app/target-mate/id6447091819"
+                href={DownloadLinks.MAC_STORE}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -44,7 +43,7 @@ export function DownloadsPage() {
             </Button>
             <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
-                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-macos-${APP_VERSION}.dmg`}
+                href={DownloadLinks.MAC_DIRECT}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -71,7 +70,7 @@ export function DownloadsPage() {
           <CardContent className="mt-auto space-y-3">
             <Button className="w-full gap-2 py-6 text-base" variant="outline" asChild>
               <a
-                href="https://play.google.com/store/apps/details?id=dev.birju.targetmate"
+                href={DownloadLinks.ANDROID_STORE}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -81,7 +80,7 @@ export function DownloadsPage() {
             </Button>
             <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
-                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`}
+                href={DownloadLinks.ANDROID_DIRECT}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -109,7 +108,7 @@ export function DownloadsPage() {
           <CardContent className="mt-auto">
             <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
-                href={`https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-windows-${APP_VERSION}.exe`}
+                href={DownloadLinks.WINDOWS_DIRECT}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -136,7 +135,7 @@ export function DownloadsPage() {
           <CardContent className="mt-auto">
             <Button className="w-full gap-2 py-6 text-base" asChild>
               <a
-                href="https://apps.apple.com/in/app/target-mate/id6447091819"
+                href={DownloadLinks.IOS_STORE}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -154,7 +153,7 @@ export function DownloadsPage() {
         </p>
         <Button variant="outline" asChild>
           <a
-            href="https://github.com/BirjuVachhani/target_mate/issues"
+            href={GITHUB_ISSUES}
             target="_blank"
             rel="noopener noreferrer"
           >

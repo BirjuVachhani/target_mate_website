@@ -33,6 +33,11 @@ export function Header() {
               className={`transition-colors hover:text-foreground/80 ${
                 location.pathname === "/" ? "text-foreground" : "text-foreground/60"
               }`}
+              onClick={() => {
+                if (location.pathname === "/") {
+                  window.scrollTo(0, 0); // Scroll to top
+                }
+              }}
             >
               Home
             </Link>
