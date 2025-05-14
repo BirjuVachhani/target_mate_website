@@ -6,7 +6,7 @@ import { HomePage } from '@/pages/home';
 import { PrivacyPage } from '@/pages/privacy';
 import { TermsPage } from '@/pages/terms';
 import { ChangelogPage } from '@/pages/changelog';
-import { DownloadsPage } from '@/pages/downloads';
+import DownloadsPage from '@/pages/downloads';
 import { MotivationPage } from '@/pages/motivation';
 import { DonatePage } from '@/pages/donate';
 import { NotFoundPage } from '@/pages/not-found';

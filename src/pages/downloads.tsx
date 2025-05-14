@@ -5,7 +5,7 @@ import { AppleIcon, WindowsIcon, AndroidIcon, AppStoreIcon, PlayStoreIcon } from
 import { TextLogo } from "@/components/ui/text-logo";
 import { DownloadLinks, GITHUB_ISSUES } from "@/lib/constants";
 
-export function DownloadsPage() {
+export default function DownloadsPage() {
   return (
     <div className="container py-24">
       <div className="flex flex-col items-center text-center mb-12">
