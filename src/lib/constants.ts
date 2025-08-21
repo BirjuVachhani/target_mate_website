@@ -9,7 +9,7 @@ export const TOGGL = "https://toggl.com";
 export const BUY_ME_COFFEE = "https://buymeacoffee.com/birjuvachhani";
 export const GITHUB_SPONSERS = "https://github.com/sponsors/BirjuVachhani";
 
-export const APP_VERSION = "0.8.0";
+export const APP_VERSION = "0.8.1";
 
 export class DownloadLinks {
 
