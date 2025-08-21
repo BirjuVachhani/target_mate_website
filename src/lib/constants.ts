@@ -15,17 +15,17 @@ export class DownloadLinks {
 
   // Android
   static readonly ANDROID_STORE = "https://play.google.com/store/apps/details?id=dev.birju.targetmate";
-  static readonly ANDROID_DIRECT = `https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`;
+  static readonly ANDROID_DIRECT = `https://github.com/BirjuVachhani/target_mate_releases/releases/download/${APP_VERSION}/TargetMate-android-${APP_VERSION}.apk`;
   
   // macOS
   static readonly MAC_STORE = "https://apps.apple.com/in/app/target-mate/id6447091819";
-  static readonly MAC_DIRECT = `https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-macos-${APP_VERSION}.dmg`;
+  static readonly MAC_DIRECT = `https://github.com/BirjuVachhani/target_mate_releases/releases/download/${APP_VERSION}/TargetMate-macos-${APP_VERSION}.dmg`;
   
   // iOS/iPadOS
   static readonly IOS_STORE = "https://apps.apple.com/in/app/target-mate/id6447091819";
   
   // Windows
-  static readonly WINDOWS_DIRECT = `https://github.com/BirjuVachhani/target_mate/releases/download/${APP_VERSION}/TargetMate-windows-${APP_VERSION}.exe`;
+  static readonly WINDOWS_DIRECT = `https://github.com/BirjuVachhani/target_mate_releases/releases/download/${APP_VERSION}/TargetMate-windows-${APP_VERSION}.exe`;
 }
 
 export const FEATURES = [
