@@ -15,5 +15,17 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+    strictPort: true,
+    host: true
+  },
+  base: '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
 });
