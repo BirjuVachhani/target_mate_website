@@ -1,18 +1,13 @@
 # Dependencies
 node_modules
-.pnp
-.pnp.js
 
-# Testing
-coverage
-.nyc_output
-
-# Production
-build
+# Build output
 dist
-out
 
-# Development
+# Astro
+.astro
+
+# Environment
 .env
 .env.local
 .env.development.local
@@ -21,8 +16,6 @@ out
 
 # Debug
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # TypeScript
 *.tsbuildinfo
@@ -32,43 +25,16 @@ yarn-error.log*
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-*.sublime-workspace
-*.sublime-project
-.project
-.classpath
-*.launch
-.settings/
 
 # OS generated files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
 # Misc
 *.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-*.swp
-.lock-wscript
-.npm
-.eslintcache
-.stylelintcache
-
-# Optional
-# Uncomment if you're using these
-# .next/
-# storybook-static
-# cypress/videos/
-# cypress/screenshots/
 
 # Local Netlify folder
 .netlify
+
+# Migration reference screenshots
+.migration-reference

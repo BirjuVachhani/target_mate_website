@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://targetmate.birju.dev/sitemap-index.xml
